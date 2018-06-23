@@ -1,24 +1,9 @@
-# README
+# Pikachu App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pikachu made of only HTML and CSS
 
-Things you may want to cover:
+Go to this link to see the main source code [Link](https://github.com/Eric1015/Pikachu/tree/master/app/views/pikachu)
 
-* Ruby version
+Go to this website to play around with Pikachu [Link](https://my-pikachu.herokuapp.com/)
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
