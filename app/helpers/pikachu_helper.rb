@@ -1,0 +1,2 @@
+module PikachuHelper
+end
