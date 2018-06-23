@@ -11,4 +11,4 @@ Go to this website to play around with Pikachu [Link](https://my-pikachu.herokua
 
 メインのソースコードが見たい方はこちらの[リンク](https://github.com/Eric1015/Pikachu/tree/master/app/views/pikachu)
 
-こちらのリンクからピカチュウと遊んであげてください[リンク](https://my-pikachu.herokuapp.com/)
+ピカチュウと遊びたい方はこちらの[リンク](https://my-pikachu.herokuapp.com/)
