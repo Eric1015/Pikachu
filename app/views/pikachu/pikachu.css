@@ -1,7 +1,7 @@
 :root{
     --pikachu-skin: #ffd622;
-    --pikachu-size: 500px;
-    --pikachu-noze-size: calc(var(--pikachu-size) / 100);
+    --pikachu-size: 700px;
+    --pikachu-noze-size: calc(var(--pikachu-size) / 60);
 }
 
 .pikachu{
@@ -9,6 +9,22 @@
     width: var(--pikachu-size, 500px);
     height: var(--pikachu-size, 500px);
     margin: 100px auto;
+}
+.pikachu:hover{
+    cursor: pointer;
+}
+
+.pikachu:hover .head-container{
+    animation: 1s ease 0s 1 move-head;
+}
+
+@keyframes move-head{
+    from, to{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
 }
 
 .pikachu * {
@@ -20,21 +36,31 @@
     width: 100%;
     top: 0%;
 }
+.head-container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+}
+.head-container * {
+    position: absolute;
+}
 .head{
     border-radius: 85% 85% 70% 70%;
     background: var(--pikachu-skin, #ffd622);
-    height: 60%;
-    width: 30%;
-    left: 35%;
-    top: 30%;
+    height: 50%;
+    width: 50%;
+    left: 25%;
+    top: 25%;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 .left-ear{
-    height: 45%;
-    width: 7%;
-    left: 30%;
+    height: 36%;
+    width: 9%;
+    left: 18%;
     transform: rotate(-35deg);
     border-radius: 100% 100% 0% 0%;
     border-top: 1px solid black;
@@ -62,9 +88,9 @@
 }
 .right-ear{
     background: var(--pikachu-skin, #ffd622);
-    height: 45%;
-    width: 7%;
-    left: 63%;
+    height: 36%;
+    width: 9%;
+    left: 73%;
     border-radius: 100% 100% 0% 0%;
     transform: rotate(35deg);
     border-top: 1px solid black;
@@ -79,23 +105,31 @@
     border-radius: 33% 100% 0% 0%;
     border-bottom: 1px solid var(--pikachu-skin, #ffd622);
 }
+.eye-container{
+    position: relative;
+    width: 50%;
+    height: 20%;
+    top: 30%;
+    left: 25%;
+}
+.eye-container * {
+    position: absolute;
+}
 .left-eye{
-    height: 8%;
-    width: 4%;
+    height: 70%;
+    width: 30%;
     border-radius: 50%;
     background-image: radial-gradient(circle at 20%, white 10%, black 30%);
     transform: rotate(120deg);
-    left: 42%;
-    top: 55%;
+    left: 0%;
 }
 .right-eye{
-    height: 8%;
-    width: 4%;
+    height: 70%;
+    width: 30%;
     border-radius: 50%;
     background-image: radial-gradient(circle at 20%, white 10%, black 30%);
     transform: rotate(60deg);
-    left: 54%;
-    top: 55%;
+    left: 70%;
 }
 .nose{
     /* Create a point down triangle */
@@ -106,13 +140,13 @@
     border-right: var(--pikachu-noze-size, 50px) solid transparent;
     /* End creating a point down triangle */
     left: calc(50% - var(--pikachu-noze-size, 50px));
-    top: 65%;
+    top: 50%;
 }
 .mouse{
-    height: 8%;
-    width: 12%;
-    left: 44%;
-    top: 70%;
+    height: 25%;
+    width: 50%;
+    left: 25%;
+    top: 60%;
 }
 .mouse-container{
     position: relative;
@@ -144,18 +178,18 @@
 }
 .left-cheek{
     background: red;
-    width: 5%;
-    height: 10%;
-    left: 35%;
-    top: 65%;
+    width: 15%;
+    height: 18%;
+    left: 3%;
+    top: 60%;
     border-radius: 40% 50% 50% 40%;
 }
 .right-cheek{
     background: red;
-    width: 5%;
-    height: 10%;
-    left: 60%;
-    top: 65%;
+    width: 15%;
+    height: 18%;
+    left: 82%;
+    top: 60%;
     border-radius: 50% 40% 40% 50%;
 }
 
