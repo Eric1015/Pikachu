@@ -1,7 +1,7 @@
 :root{
     --pikachu-skin: #ffd622;
-    --pikachu-size: 700px;
-    --pikachu-noze-size: calc(var(--pikachu-size) / 60);
+    --pikachu-size: 600px;
+    --pikachu-noze-size: calc(var(--pikachu-size) / 80);
 }
 
 .pikachu{
@@ -10,11 +10,8 @@
     height: var(--pikachu-size, 500px);
     margin: 100px auto;
 }
-.pikachu:hover{
+.head-container:hover{
     cursor: pointer;
-}
-
-.pikachu:hover .head-container{
     animation: 1s ease 0s 1 move-head;
 }
 
@@ -42,6 +39,7 @@
     width: 50%;
     left: 25%;
     top: 10%;
+    z-index: 1;
 }
 .head-container * {
     position: absolute;
@@ -59,7 +57,7 @@
 }
 .left-ear{
     height: 36%;
-    width: 9%;
+    width: 11%;
     left: 18%;
     transform: rotate(-35deg);
     border-radius: 100% 100% 0% 0%;
@@ -89,8 +87,8 @@
 .right-ear{
     background: var(--pikachu-skin, #ffd622);
     height: 36%;
-    width: 9%;
-    left: 73%;
+    width: 11%;
+    left: 71%;
     border-radius: 100% 100% 0% 0%;
     transform: rotate(35deg);
     border-top: 1px solid black;
@@ -107,25 +105,25 @@
 }
 .eye-container{
     position: relative;
-    width: 50%;
-    height: 20%;
-    top: 30%;
+    width: 54%;
+    height: 18%;
+    top: 35%;
     left: 25%;
 }
 .eye-container * {
     position: absolute;
 }
 .left-eye{
-    height: 70%;
-    width: 30%;
+    height: 72%;
+    width: 24%;
     border-radius: 50%;
     background-image: radial-gradient(circle at 20%, white 10%, black 30%);
     transform: rotate(120deg);
     left: 0%;
 }
 .right-eye{
-    height: 70%;
-    width: 30%;
+    height: 72%;
+    width: 24%;
     border-radius: 50%;
     background-image: radial-gradient(circle at 20%, white 10%, black 30%);
     transform: rotate(60deg);
@@ -140,13 +138,13 @@
     border-right: var(--pikachu-noze-size, 50px) solid transparent;
     /* End creating a point down triangle */
     left: calc(50% - var(--pikachu-noze-size, 50px));
-    top: 50%;
+    top: 55%;
 }
 .mouse{
-    height: 25%;
-    width: 50%;
-    left: 25%;
-    top: 60%;
+    height: 15%;
+    width: 40%;
+    left: 30%;
+    top: 65%;
 }
 .mouse-container{
     position: relative;
@@ -180,7 +178,7 @@
     background: red;
     width: 15%;
     height: 18%;
-    left: 3%;
+    left: 1%;
     top: 60%;
     border-radius: 40% 50% 50% 40%;
 }
@@ -188,7 +186,7 @@
     background: red;
     width: 15%;
     height: 18%;
-    left: 82%;
+    left: 84%;
     top: 60%;
     border-radius: 50% 40% 40% 50%;
 }
@@ -198,24 +196,33 @@
     width: 100%;
     top: 50%;
 }
+.body-container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    left: 25%;
+}
+.body-container * {
+    position: absolute;
+}
 .body{
     background: var(--pikachu-skin, #ffd622);
-    height: 70%;
-    width: 28%;
+    height: 56%;
+    width: 48%;
     top: -30%;
-    left: 36%;
+    left: 26%;
     border-radius: 30% 30% 20% 20%;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    z-index: -1;
 }
 .left-hand{
     background: var(--pikachu-skin, #ffd622);
-    height: 25%;
-    width: 7%;
+    height: 35%;
+    width: 22%;
     transform: rotate(-30deg);
-    left: 40%;
+    left: 14%;
+    top: 40%;
     border-radius: 0% 0% 40% 40%;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
@@ -223,10 +230,11 @@
 }
 .right-hand{
     background: var(--pikachu-skin, #ffd622);
-    height: 25%;
-    width: 7%;
+    height: 35%;
+    width: 22%;
     transform: rotate(30deg);
-    left: 53%;
+    left: 64%;
+    top: 40%;
     border-radius: 0% 0% 40% 40%;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
@@ -234,31 +242,31 @@
 }
 .left-feet{
     background: var(--pikachu-skin, #ffd622);
-    height: 20%;
-    width: 5%;
+    height: 30%;
+    width: 15%;
     border-radius: 100%;
     border: 1px solid black;
     transform: rotate(30deg);
-    left: 38%;
-    top: 30%;
-    z-index: -2;
+    left: 10%;
+    top: 80%;
+    z-index: -3;
 }
 .right-feet{
     background: var(--pikachu-skin, #ffd622);
-    height: 20%;
-    width: 5%;
+    height: 30%;
+    width: 15%;
     border-radius: 100%;
     border: 1px solid black;
     transform: rotate(-30deg);
-    left: 57%;
-    top: 30%;
-    z-index: -2;
+    left: 75%;
+    top: 80%;
+    z-index: -3;
 }
 .tail{
-    height: 50%;
-    width: 50%;
-    left: 61%;
-    top: -50%;
+    height: 100%;
+    width: 100%;
+    left: 82%;
+    top: -60%;
     transform: rotate(-33deg);
     z-index: -3;
 }
@@ -272,25 +280,25 @@
 }
 .tail1{
     background: var(--pikachu-skin, #ffd622);
-    height: 50%;
+    height: 25%;
     width: 50%;
     border: 1px solid black;
 }
 .tail2{
     background: var(--pikachu-skin, #ffd622);
-    height: 20%;
+    height: 10%;
     width: 13%;
     left: 0%;
-    top: 50%;
+    top: 25%;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
 .tail3{
     background: var(--pikachu-skin, #ffd622);
-    height: 13.5%;
+    height: 6.75%;
     width: 13%;
-    top: 56%;
+    top: 28.25%;
     left: -13%;
     border-top: 1px solid black;
     border-left: 1px solid black;
@@ -299,8 +307,8 @@
 }
 .tail4{
     background: brown;
-    height: 15%;
+    height: 7.5%;
     width: 6.5%;
-    top: 69.5%;
+    top: 35%;
     left: -13%;
 }
